@@ -1,13 +1,16 @@
-import React from 'react';
-import {Text} from 'react-native';
-import Card from './card';
+import React from "react";
+import { Text } from "react-native";
+import Card from "./card";
+import CardSection from "./CardSection";
 
-const AlbumDetail = (props) => {
-    return (
-        <Card>
-            <Text>{props.album.title}</Text>
-        </Card>
-    )
-}
+const AlbumDetail = props => {
+  return (
+    <Card>
+      <CardSection>
+        <Text>{props.album.title}</Text>
+      </CardSection>
+    </Card>
+  );
+};
 
 export default AlbumDetail;
